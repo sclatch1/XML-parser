@@ -8,6 +8,7 @@ string eenCD::get_Artist() {return Artist;}
 
 void eenCD::set_Artist(string &artist)
 {
+
     Artist = artist;
 }
 
