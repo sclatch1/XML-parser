@@ -28,8 +28,11 @@ string eenCD::get_Country(){return Country;}
 
 void eenCD::set_Country(string coutry) {Country = coutry;}
 
-string eenCD::to_string(){
-    string output = "it worked";
-    cout << Title << endl << Artist << endl << Company << endl << Country << endl <<Price << Year << endl;
+string eenCD::Print(){
+    string output = "It worked!";
+    cout << Title << endl << Artist << endl << Country << endl << Company << endl << Price << endl << Year << endl;
     return output;
+}
+
+eenCD::eenCD() {
 }

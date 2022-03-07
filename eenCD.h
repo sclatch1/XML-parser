@@ -16,6 +16,8 @@ private:
     int Year;
     int Price;
 public:
+    eenCD();
+
     void set_Artist(string &artist);
     string get_Artist();
     void set_Title(string &title);
@@ -28,7 +30,7 @@ public:
     string get_Country();
     void set_Company(string company);
     string get_Company();
-    string to_string();
+    string Print();
 };
 
 
