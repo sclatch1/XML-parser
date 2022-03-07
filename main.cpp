@@ -12,7 +12,7 @@ using namespace std;
 //Voor oef 1:
 int main() {
     eenCD cd;
-    cout << "Opdracht 1:" << endl;
+    cout << "Opdracht 1:\n" << endl;
     TiXmlDocument doc;
     if (!doc.LoadFile("eenCD.xml")) {
         std::cerr << doc.ErrorDesc() << std::endl;
@@ -65,6 +65,15 @@ int main() {
         }
     }
 
-    cout << "Opdracht 2:" << endl;
+    cout << "\nOpdracht 2:\n" << endl;
     cout << cd.Print();
+
+    cout << "\n\nOpdracht 3:\n" << endl;
+    TiXmlElement *cds = doc.FirstChildElement();
+
+    auto cdList =  //lijst van alle cds uit de catalog
+    for (auto i : cdList){
+
+    }
+
 }
