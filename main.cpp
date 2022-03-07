@@ -2,6 +2,7 @@
 #include "tinyxml.h"
 #include "eenCD.h"
 #include "parser.h"
+#include "CDcat.h"
 #include <string>
 #include <sstream>
 
@@ -69,11 +70,12 @@ int main() {
     cout << cd.Print();
 
     cout << "\n\nOpdracht 3:\n" << endl;
-    TiXmlElement *cds = doc.FirstChildElement();
+    CDcat* cat;
+    cout << cat->getCatalog();
 
-    auto cdList =  //lijst van alle cds uit de catalog
-    for (auto i : cdList){
-
-    }
+    //auto cdList =  //lijst van alle cds uit de catalog
+    //for (auto i : cdList){
+//
+    //}
 
 }

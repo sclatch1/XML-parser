@@ -12,7 +12,7 @@
 using namespace std;
 
 
-void parser::parse() {
+eenCD* parser::parseCD(TiXmlElement* elem) {
     eenCD cd;
     TiXmlDocument doc;
     if (!doc.LoadFile("eenCD.xml")) {

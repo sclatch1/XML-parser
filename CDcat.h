@@ -24,7 +24,7 @@ public:
      * This method expects the TiXmlElement that is passed as a parameter to represent an entire catalog of CDs.
      * It will then parse said catalog and return it as a pointer to a vector of CD*'s.
      */
-    vector<eenCD*>* parseCatalog(TiXmlElement* elem);
+    vector<eenCD*>* parseCat(TiXmlElement* elem);
     vector<eenCD*>* getCatalog();
 };
 

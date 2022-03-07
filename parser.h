@@ -4,11 +4,12 @@
 
 #ifndef UNTITLED10_PARSER_H
 #define UNTITLED10_PARSER_H
-
+#include "tinyxml.h"
+#include "eenCD.h"
 
 class parser {
 public:
-    void parse();
+    eenCD* parseCD(TiXmlElement* elem);
 };
 
 
