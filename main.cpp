@@ -70,8 +70,8 @@ int main() {
     cout << cd.Print();
 
     cout << "\n\nOpdracht 3:\n" << endl;
-    CDcat* cat;
-    cout << cat->getCatalog();
+    CDcat cat;
+    cout << cat.getCatalog() << cat.parseCat("ARTIST");
 
     //auto cdList =  //lijst van alle cds uit de catalog
     //for (auto i : cdList){
