@@ -67,15 +67,30 @@ int main() {
     }
 
     cout << "\nOpdracht 2:\n" << endl;
-    cout << cd.Print();
+    cout << cd.Print() << endl;
 
-    cout << "\n\nOpdracht 3:\n" << endl;
+    cout << "\nOpdracht 3:\n" << endl;
+
+    TiXmlDocument docCat;
+    if (!doc.LoadFile("cdCatalog.xml")) {
+        std::cerr << doc.ErrorDesc() << std::endl;
+        return 1;
+    }
+    TiXmlElement *CDs = docCat.FirstChildElement();
     CDcat cat;
-    cout << cat.getCatalog() << cat.parseCat("ARTIST");
+    /*for(TiXmlElement* e = CDs->FirstChildElement(); e != NULL; e = e->NextSiblingElement()){
+        parser cdp;
+        eenCD* cd = cdp.parseCD(e);
+        cat.getCatalog()->push_back(cd);
+        cout<< cat.getCatalog();
+    }*/
+    cout << cat.getCatalog();
+    //cout << cat.parseCat(docCat.FirstChildElement());
+    cout << "test1";
 
-    //auto cdList =  //lijst van alle cds uit de catalog
-    //for (auto i : cdList){
-//
-    //}
+    for (auto &it : *cat.getCatalog()){ //lijst van alle cds uit de catalog doorlopen
+        cout << it;
+        cout << "test2";
+    }
 
 }

@@ -8,6 +8,9 @@
 #include "eenCD.h"
 
 class parser {
+private:
+    string readElement(TiXmlElement* elem, const char* tag);
+    eenCD* cd;
 public:
     eenCD* parseCD(TiXmlElement* elem);
 };
